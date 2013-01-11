@@ -10,6 +10,8 @@ a:hover {color: #AEC126; border-bottom: 1px solid #AEC126;}
 
 h2 {font-size: 36px;}
 p {font-size: 18px; line-height: 24px;}
+cite {font-size: 12px; font-weight: 300; float: right; font-style: normal; }
+
 
 ul {list-style: none; margin: 0px; padding: 0px;}
 li {max-width: 800px;}
@@ -69,7 +71,6 @@ header a:hover {color: #AEC126; border-bottom: 1px solid #AEC126;}
 /* FAN ART */
 /* ---------------------------------------------------------------- */
 #artWrapper img {width: 100%;}
-cite {font-size: 12px; font-weight: 300; float: right;}
 
 /* FOOTER */
 /* ---------------------------------------------------------------- */
