@@ -1,0 +1,211 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>voxel.js * sharing is fun</title>
+  <meta name="description" content="javascript multiplayer voxel engine">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+<div id="wrapper">
+  <article id="intro">
+    <header>  
+      <img class="logo" src="logo.png" width="500px" />
+      <h3>an open source voxel game building toolkit for modern web browsers</h3>
+
+      <ul class="top-nav">
+        <li><a href="#what">About</a></li>
+        <li><a href="#gallery">Examples</a></li>
+        <li><a href="#modules">Modules</a></li>
+        <li><a href="#how">How</a></li>
+        <li>
+          <a href="https://twitter.com/voxeljs" class="twitter-follow-button" data-show-count="false" data-dnt="true" target="_blank">Follow @voxeljs</a>
+        </li>
+      </ul>
+
+      <nav class="next-prev">
+        <a class="next what" href="#what">&darr;</a>
+      </nav>
+    </header>
+  </article>
+
+  <article id="what">
+    <img src="awesome2.gif" width="350px">
+    <h2><a name="what" class="anchor" href="#what"><span class="mini-icon mini-icon-link"></span></a>About</h2>
+    <p>voxel.js is a collection of projects that make it easier than ever to
+        create 3D voxel games like Minecraft all in the browser.</p>
+    <p>It was written by <a href="http://twitter.com/maxogden">@maxogden</a> and <a href="http://twitter.com/substack">@substack</a>, two non-game developers that want to make voxel games easy, fun and modular. If you find bugs it is because we don't really know what we are doing. The good news is that 100% of the code is on Github so we hope you will fork it.</p>
+
+  </article>
+
+  <article id="gallery">
+    <h2><a name="gallery" class="anchor" href="#gallery"><span class="mini-icon mini-icon-link"></span></a>Examples</h2>
+    <p>voxel.js games require a computer that can run WebGL, the HTML5 3D graphics
+      engine. Visit <a href="http://get.webgl.org/">get.webgl.org</a> to see if your
+      current browser supports it. Chrome version 23 or above or Firefox version
+      17 or above are recommended.</p>
+    
+    <div id="imgWrapper">
+      <div class="exampleItem">
+        <a href="http://maxogden.github.com/voxel-engine/" target="_blank"><img src="demos/1.png"></a>
+        <cite><a href="https://github.com/maxogden/voxel-engine/blob/master/demo/demo.js" target="_blank">view source on github</a></cite>
+      </div>
+      <div class="exampleItem">
+        <a href="http://substack.net/projects/voxel-forest/" target="_blank"><img src="demos/2.png"></a>
+        <cite><a href="https://github.com/substack/voxel-forest/blob/master/example/forest.js" target="_blank">view source on github</a></cite>
+      </div>
+      <div class="exampleItem">
+        <a href="http://substack.net/projects/voxel-creature/" target="_blank"><img src="demos/3.png"></a>
+        <cite><a href="https://github.com/substack/voxel-creature/blob/master/example/debris.js" target="_blank">view source on github</a></cite>
+      </div>  
+      <div class="exampleItem">
+        <a href="http://maxogden.github.com/voxel-perlin-terrain/" target="_blank"><img src="demos/4.png"></a>
+        <cite><a href="https://github.com/maxogden/voxel-perlin-terrain/blob/master/demo.js" target="_blank">view source on github</a></cite>
+      </div>  
+      <div class="exampleItem">
+        <a href="http://substack.net/projects/radial-voxel-terrain" target="_blank"><img src="demos/5.png"></a>
+      </div>  
+      <div class="exampleItem">
+        <a href="http://maxogden.github.com/voxel-simplex-terrain/?seed=typearandomsentencehere!" target="_blank"><img src="demos/6.png"></a>
+        <cite><a href="https://github.com/maxogden/voxel-simplex-terrain/blob/master/demo.js" target="_blank">view source on github</a></cite>
+      </div>  
+      <div class="exampleItem">
+        <a href="http://maxogden.github.com/voxel-world-function/" target="_blank"><img src="demos/7.png"></a>
+        <cite><a href="https://github.com/maxogden/voxel-world-function/blob/master/demo.js" target="_blank">view source on github</a></cite>
+      </div>  
+
+    </div>
+  </article>
+
+  <article id="modules">
+    <h2><a name="modules" class="anchor" href="#modules"><span class="mini-icon mini-icon-link"></span></a>Components</h2>
+    <p>Instead of making a giant game framework we instead decided to split voxel.js
+      up into a bunch of small building blocks (modules). Modules can be installed
+      with <a href="http://npmjs.org">npm</a>, the package manager from <a href="http://nodejs.org">node.js</a>.
+      Here are some modules that we have already started working on:</p>
+
+    <h3>The Essentials</h3>
+      <ul class="essentials">
+        <li class="itemTitle"><a href="https://github.com/maxogden/voxel-engine">voxel-engine</a>
+         <li class="itemDesc">this is the main module for building voxel games - you can plug any voxel module into the engine.</li></li>
+
+        <li class="itemTitle"><a href="https://github.com/maxogden/voxel">voxel</a>
+          <li class="itemDesc">the logic that generates voxel world data and compresses voxel data so that it can be
+          efficiently rendered in 3D. voxel-engine uses this.</li></li>
+
+        <li class="itemTitle"><a href="https://github.com/maxogden/voxel-mesh">voxel-mesh</a>
+          <li class="itemDesc">takes voxel data from the <code>voxel</code> module and turns it into a three.js
+          3D Mesh that can be displayed in a game. voxel-engine also uses this.</li></li>
+      </ul>
+    <h3>Add-ons</h3>
+      <div class="addons">
+        <div class="item" style="background-image: url(thumbs/creatures.png);">
+          <a class="itemTitle" href="https://github.com/substack/voxel-creature">voxel-creature</a>
+          <div class="itemDesc">lets you add some NPC creatures to your game</div>
+        </div>
+
+        <div class="item" style="background-image: url(thumbs/debris.png);">
+          <a class="itemTitle" href="https://github.com/substack/voxel-debris">voxel-debris</a>
+          <div class="itemDesc">configure how much debris appears (and debris physics) when you destroy a block</div>
+        </div>
+
+        <div class="item" style="background-image: url(thumbs/forest.png);">
+          <a class="itemTitle" href="https://github.com/substack/voxel-forest">voxel-forest</a>
+          <div class="itemDesc">decorate your world with procedurally generated trees</div>
+        </div>
+
+        <div class="item" style="background-image: url(thumbs/perlin.png);">
+          <a class="itemTitle" href="https://github.com/maxogden/voxel-perlin-terrain">voxel-perlin-terrain</a>
+          <div class="itemDesc">generate voxel worlds using perlin noise</div>
+        </div>
+
+        <div class="item" style="background-image: url(thumbs/simplex.png);">
+          <a class="itemTitle" href="https://github.com/maxogden/voxel-simplex-terrain">voxel-simplex-terrain</a>
+          <div class="itemDesc">generate voxel worlds using simplex noise (like perlin noise but newer)</div>
+        </div>
+
+        <div class="item" style="background-image: url(thumbs/server.png);">
+          <a class="itemTitle" href="https://github.com/maxogden/voxel-server">voxel-server</a>
+          <div class="itemDesc">multiplayer voxel games! note: this is still a work in progress and isn't a smooth
+          as it should be yet</div>
+        </div>
+
+        <div class="item" style="background-image: url(thumbs/interact.png);">
+          <a class="itemTitle" href="https://github.com/chrisdickinson/interact">interact</a>
+          <div class="itemDesc">a module that makes it easy to get <a href="https://developer.mozilla.org/en-US/docs/API/Pointer_Lock_API">pointer lock</a> in browsers</div>
+        </div>
+
+        <div class="item" style="background-image: url(thumbs/physics.png);">
+          <a class="itemTitle" href="https://github.com/maxogden/player-physics">player-physics</a>
+          <div class="itemDesc">the velocity and gravity algorithms for players</div>
+        </div>
+
+        <div class="item" style="background-image: url(thumbs/toolbar.png);">
+          <a class="itemTitle" href="https://github.com/maxogden/toolbar">toolbar</a>
+          <div class="itemDesc">- add a customizable toolbar that lets players select items</div>
+        </div>
+      </div>
+
+    <p>The goal for all of these modules is that they are <strong>fun, simple and easy to hack</strong>.</p>
+  </article>
+
+  <article id="how">
+    <h2><a name="how" class="anchor" href="#how"><span class="mini-icon mini-icon-link"></span></a>Creating new games or modules</h2>
+    <p>To use the voxel.js modules you will need to install <a href="http://nodejs.org">node.js</a> (which
+      will also install npm) and be able to use your computer's command line.</p>
+    <p>The simplest voxel game you can make looks like this:</p>
+    <pre class="highlight">
+      <code>
+var createGame = require('voxel-engine')
+var game = createGame()
+game.appendTo(document.body)</code>
+    </pre>
+    <p>Then to build your game you use <a href="http://browserify.org">browserify</a>:</p>
+    <pre class="highlight">
+      <code>
+browserify mygame.js > builtgame.js
+    </pre>
+    <p>Load builtgame.js into a web page and you're off and running! Look at one of the working examples to learn more.</p>
+    <p>More detailed instructions are coming soon!</p>
+    <p>If you make a voxel.js module and want it featured on the site you can <a href="https://github.com/maxogden/voxeljs.com">fork the source</a> and add your module to the list.</p>
+    <h3>Ideas/wishlist</h3>
+    <p>If any of these look fun to you please help an existing module out by
+      making it better or start a new module that provides a solution -- whichever
+      is easier.</p>
+    <ul class="list">
+      <li>better collision physics. right now you can still get stuck in and on
+        walls/floors.</li>
+      <li>world saving/loading with IndexedDB. preferably using <a href="https://github.com/Raynos/levelidb">levelidb</a> so
+        that it can be easily synced to a server later with <a href="https://github.com/dominictarr/level-scuttlebutt">level-scuttlebutt</a>
+      </li>
+      <li>any performance improvements at all are always welcome</li>
+      <li>better texture mappings. right now we don't have the capability of setting
+        a top texture and side textures on a voxel -- all sides have the same texture</li>
+      <li>data importers for various formats: minecraft worlds, png heightmaps,
+        shapefiles, topojson, CSVs or anything else you can think of!</li>
+      <li>multiplayer! @maxogden is attempting to write a multiplayer server called
+        <a
+        href="https://github.com/maxogden/voxel-server">voxel-server</a> but he has never done it before and would love help</li>
+      <li>in game UI. along the same lines as the <a href="http://github.com/maxogden/toolbar">toolbar</a> module
+        -- things to make game makers make games that are easier to use</li>
+    </ul>
+  </article>
+  <article id="fanart">
+    <h2>Fan Art</h3>
+      <p>Here are some of the wonderful things users have made with their voxel worlds. Tweet <a href="http://www.twitter.com/voxeljs" target="_blank">@voxeljs</a> or email max@maxogden.com your photo to submit your art!</a>
+        <div id="artWrapper">
+          <img src="postcard-forest.png">
+          <cite>by <a href="http://www.twitter.com/jllord">@jllord</a></cite>
+  </article>
+  <footer>Any other thoughts or questions, seek out <a href="http://www.twitter.com/maxogden">@maxogden</a> and <a href="http://www.twitter.com/maxogden">@substack</a>. Meow.</footer>
+</div>
+</body>
+</html>
