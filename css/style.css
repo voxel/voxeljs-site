@@ -78,7 +78,7 @@ header a:hover {color: #AEC126; border-bottom: 1px solid #AEC126;}
 footer {font-size: 13px; color: #AEC126; line-height: 20px; max-width: 800px; margin: 0px auto; }
 footer a, footer a:visited, footer a:active {color: #AEC126; font-weight: 700; border: none;}
 
-@media (max-width : 480px) {
+@media (max-width : 750px) {
 	#intro {background-image: url('../two.png'); background-repeat: no-repeat; height: 600px; max-width: auto; padding-right: 20px;}
 	header {margin-top: 20px;}
 	header img {width: 100%;}
