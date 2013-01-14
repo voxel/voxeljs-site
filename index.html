@@ -167,7 +167,12 @@
       <code>
 var createGame = require('voxel-engine')
 var game = createGame()
-game.appendTo(document.body)</code>
+var container = document.body
+game.appendTo(container)
+container.addEventListener('click', function() {
+  game.requestPointerLock(container)
+})
+</code>
     </pre>
     <p>Then to build your game you use <a href="http://browserify.org">browserify</a>:</p>
     <pre class="highlight">
