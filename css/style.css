@@ -79,14 +79,14 @@ footer {font-size: 13px; color: #AEC126; line-height: 20px; max-width: 800px; ma
 footer a, footer a:visited, footer a:active {color: #AEC126; font-weight: 700; border: none;}
 
 @media (max-width : 900px) {
-		header {margin-top: 20px;}
+	header {margin-top: 20px;}
 	header img {width: 100%;}
 	#intro {padding-right: 20px;}
 }
 
-@media (max-width : 300px) {
+@media (max-width : 320px) {
 	#intro {background-image: url('../two.png'); background-repeat: no-repeat; height: 469px; max-width: auto; padding-right: 20px; background-size: 100%;
-background-position-y: 288px;}
+	background-position-y: 288px;}
 	header {margin-top: 20px;}
 	header img {width: 100%;}
 	#what img {width: 230px; margin: auto 0px; float: inherit;}
