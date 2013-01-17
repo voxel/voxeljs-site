@@ -215,20 +215,19 @@ browserify mygame.js > builtgame.js</code>
     <ul class="list">
       <li>better collision physics. right now you can still get stuck in and on
         walls/floors.</li>
-      <li>world saving/loading with IndexedDB. preferably using <a href="https://github.com/Raynos/levelidb">levelidb</a> so
-        that it can be easily synced to a server later with <a href="https://github.com/dominictarr/level-scuttlebutt">level-scuttlebutt</a>
       </li>
       <li>any performance improvements at all are always welcome</li>
       <li>better texture mappings. right now we don't have the capability of setting
         a top texture and side textures on a voxel -- all sides have the same texture</li>
-      <li>data importers for various formats: .stl, .obj, minecraft worlds, png heightmaps,
+      <li>data voxelizers (e.g. <a href="http://www.cs.princeton.edu/~min/binvox/">binvox</a>) for various formats: .stl, .obj,
         shapefiles, topojson, CSVs or anything else you can think of!</li>
+      <li>load minecraft worlds (or portions of them)</li>
+      <li>generate terrain from a <a href="https://www.google.com/search?q=png+height+map&hl=en&tbo=d&source=lnms&tbm=isch&sa=X&ei=xl73UNn5BaL3igLB44DgAQ&ved=0CAoQ_AUoAA&biw=1309&bih=689">PNG heightmap</a></li>
+      <li>drag and drop a photo to render it in voxels</li>
       <li>in game UI. along the same lines as the <a href="http://github.com/maxogden/toolbar">toolbar</a> module
         -- things to make game makers make games that are easier to use</li>
       <li>musical voxels with the <a href="http://chromium.googlecode.com/svn/trunk/samples/audio/index.html">web audio api</a></li>
-      <li>drag and drop a photo to render it in voxels</li>
-      <li>customize block textures by uploading them</li>
-      <li>arms for players. right now they don't have arms. it is sad</li>
+      <li>arms for first person players. right now they don't have arms. it is sad</li>
       <li>a camera mode that lets you fly around <a href="http://mrdoob.github.com/three.js/examples/webgl_geometry_minecraft.html">like this</a></li>
     </ul>
   </article>
