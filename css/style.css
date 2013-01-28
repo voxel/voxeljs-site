@@ -60,13 +60,13 @@ header a:hover {color: #AEC126; border-bottom: 1px solid #AEC126;}
 
 /* MODULES */
 /* ---------------------------------------------------------------- */
-#modules ul {width: 400px;}
-#modules h3, #how h3 {background: #333; padding: 8px 10px; color: #BDD2E8; font-weight: 300; margin: 30px 0px;}
+#modules ul {width: 400px; float: left; }
+#modules h3, #how h3 {clear: both; background: #333; padding: 8px 10px; color: #BDD2E8; font-weight: 300; margin: 30px 0px;}
 
 .itemTitle {font-size: 28px; font-weight: bold;}
 .itemDesc {padding: 12px 0px 32px 0px; line-height: 24px;}
 .item {background-repeat: no-repeat;padding-left: 180px; min-height: 160px; background-size: 150px;}
-
+.essentials-image { float: left; width: 400px; }
 
 /* FAN ART */
 /* ---------------------------------------------------------------- */
