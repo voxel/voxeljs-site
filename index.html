@@ -331,14 +331,12 @@
     "voxel-engine": "0.3.9",
     "painterly-textures": "0.0.3"
   }
-}
-      </code>
+}</code>
     </pre>
     <p>Now you can tell node to install your dependencies:</p>
     <pre class="highlight">
       <code>
-$ npm install
-      </code>
+$ npm install</code>
     </pre>
     <p>Next, create <em>mygame.js</em> and put the following code in it:</p>
     <pre class="highlight">
@@ -350,13 +348,12 @@ var container = document.body
 game.appendTo(container)
 container.addEventListener('click', function() {
   game.requestPointerLock(container)
-})
-</code>
+})</code>
     </pre>
     <p>Then to build your game you use <a href="http://browserify.org">browserify</a>:</p>
     <pre class="highlight">
       <code>
-$ browserify mygame.js > builtgame.js</code>
+$ browserify mygame.js -o builtgame.js</code>
     </pre>
     <p>Load builtgame.js into a web page and you're off and running! Look at one of the working examples to learn more.</p>
     <p>There are also API docs in the <a href="https://github.com/maxogden/voxel-engine#api">voxel-engine readme</a></p>
