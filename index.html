@@ -342,7 +342,7 @@ $ npm install</code>
     <pre class="highlight">
       <code>
 var createGame = require('voxel-engine')
-var texturePath = require('painterly-textures')
+var texturePath = require('painterly-textures')(__dirname)
 var game = createGame({texturePath: texturePath})
 var container = document.body
 game.appendTo(container)
