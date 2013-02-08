@@ -144,7 +144,7 @@
       with <a href="http://npmjs.org">npm</a>, the package manager from <a href="http://nodejs.org">node.js</a>.
       Here are some modules that we have already started working on:</p>
 
-    <h3>The Essentials</h3>
+    <h3>The Core</h3>
       <ul class="essentials">
         <li class="itemTitle"><a href="https://github.com/maxogden/voxel-engine">voxel-engine</a>
          <li class="itemDesc">this is the main module for building voxel games - you can plug any voxel module into the engine.</li></li>
@@ -158,7 +158,7 @@
           3D Mesh that can be displayed in a game. voxel-engine also uses this.</li></li>
       </ul>
       <img class="essentials-image" src="wireframe-edit.gif">
-    <h3>Add-ons</h3>
+    <h3><a name="addons" class="anchor" href="#addons"><span class="mini-icon mini-icon-link"></span></a>Add-ons</h3>
       <div class="addons">
         <div class="item" style="background-image: url(thumbs/creatures.png);">
           <a class="itemTitle" href="https://github.com/substack/voxel-creature">voxel-creature</a>
@@ -337,7 +337,11 @@
   </article>  
 
   <article id="how">
-    <h2><a name="how" class="anchor" href="#how"><span class="mini-icon mini-icon-link"></span></a>Making a simple game</h2>
+    <h2><a name="how" class="anchor" href="#how"><span class="mini-icon mini-icon-link"></span></a>Making your first game</h2>
+    <p><a target="_blank" href="http://twitter.com/maxogden">@maxogden</a> has been working on an in-browser game maker called Voxel Creator. You don't need to install anything to use it. To save your game you just need a free account from Github. You can try it out by visiting <a target="_blank" href="http://voxel-creator.jit.su">http://voxel-creator.jit.su</a>.</p>
+    <p><a target="_blank" href="http://voxel-creator.jit.su"><img src="creator.png"></a></p>
+    <p>If you encounter any issues with Voxel Creator, please open a bug report <a target="_blank" href="https://github.com/maxogden/voxel-gist/issues">over here</a> as the program is open source.</p>
+    <h2>Making a game from the command line</h2>
     <p>To use the voxel.js modules you will need to install <a href="http://nodejs.org">node.js</a> (which
       will also install npm) and be able to use your computer's command line.</p>
     <p>Once node.js is installed, you can install the basic voxel.js npm package in your project directory, and then install a basic texture pack. Make a file called <code>package.json</code> in your project directory and give it these contents:</p>
@@ -347,7 +351,7 @@
   "name": "mygamename",
   "version": "0.0.1",
   "dependencies": {
-    "voxel-engine": "0.3.9",
+    "voxel-engine": "0.5.3",
     "painterly-textures": "0.0.3"
   }
 }</code>
@@ -365,9 +369,8 @@ var texturePath = require('painterly-textures')(__dirname)
 var game = createGame({texturePath: texturePath})
 var container = document.body
 game.appendTo(container)
-container.addEventListener('click', function() {
-  game.requestPointerLock(container)
-})</code>
+game.setupPointerLock(container)
+</code>
     </pre>
     <p>Then to build your game you use <a href="http://browserify.org">browserify</a>:</p>
     <pre class="highlight">
