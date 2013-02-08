@@ -377,7 +377,22 @@ game.setupPointerLock(container)
       <code>
 $ browserify mygame.js -o builtgame.js</code>
     </pre>
-    <p>Load builtgame.js into a web page and you're off and running! Look at one of the working examples to learn more.</p>
+    <p>Load builtgame.js into a web page:</p>
+    <pre class="highlight"><code>&lt;!doctype html&gt;
+&lt;html&gt;
+  &lt;body&gt;
+    &lt;script src=&quot;bundle.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    <p>For images (block textures, player skins, etc) to load correctly you need to serve voxel games from an http server (as opposed to opening the .html file in your browser directly). Here is how to do that using <a href="https://npmjs.org/package/http-server">http-server</a> from npm:</p>
+    <pre class="highlight">
+      <code>
+# install http-server and put it in your command line path
+$ npm install http-server -g
+# start a local server in the local directory
+$ http-server</code>
+    </pre>
+    <p>Now you should be able to play your game by opening up <a href="http://localhost:8080"><code>http://localhost:8080</code></a> in your browser. Look at one of the working examples to learn more.</p>
     <p>There are also API docs in the <a href="https://github.com/maxogden/voxel-engine#api">voxel-engine readme</a></p>
     <p>If you make a voxel.js module and want it featured on the site you can <a href="https://github.com/maxogden/voxeljs.com">fork the source</a> and add your module to the list.</p>
     <h3>Ideas/wishlist</h3>
