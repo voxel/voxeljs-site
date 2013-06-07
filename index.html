@@ -18,8 +18,18 @@
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 <div id="wrapper">
   <article id="intro">
-    <header>  
-      <img class="logo" src="logo.png"/>
+    <header>
+      <div class="title">voxel.js</div>
+      <div class="voxelogo">
+        <ul id="cube">
+          <li class="front">JS&nbsp;
+          <li class="back">
+          <li class="right">
+          <li class="left">
+          <li class="top">
+          <li class="bottom">
+        </ul>
+      </div>
       <h3>an open source voxel game building toolkit for modern web browsers</h3>
 
       <ul class="top-nav">
@@ -47,6 +57,9 @@
     <p>voxel.js is a collection of projects that make it easier than ever to
         create 3D voxel games like Minecraft all in the browser.</p>
     <p>It was written by <a href="http://twitter.com/maxogden">@maxogden</a> and <a href="http://twitter.com/substack">@substack</a>, two non-game developers that want to make voxel games easy, fun and modular. If you find bugs it is most likely because we don't really know what we are doing when it comes to making games.</p>
+    <iframe style="float: right; padding: 20px; " width="420" height="315" src="http://www.youtube.com/embed/8gM3xMObEz4" frameborder="0" allowfullscreen></iframe>
+    <h2><a name="watch" class="anchor" href="#watch"><span class="mini-icon mini-icon-link"></span></a>Watch</h2>
+    <p>Here is a presentation from May 2013 that covers all the exciting stuff happening in voxel.js land!</p>
     <h2><a name="contribute" class="anchor" href="#contribute"><span class="mini-icon mini-icon-link"></span></a>Contribute</h2>
     <p>All of the code is open source! If you find bugs or have ideas for improvements please open issues for them on the related github project, or better yet send code or write new modules. You can also <a target="_blank" href="https://www.gittip.com/maxogden/">donate to the project on gittip</a>, a site that lets people support open source programmers through small recurring donations.</a>
 
@@ -148,17 +161,8 @@
     <h3>The Core</h3>
       <ul class="essentials">
         <li class="itemTitle"><a href="https://github.com/maxogden/voxel-engine">voxel-engine</a>
-         <li class="itemDesc">this is the main module for building voxel games - you can plug any voxel module into the engine.</li></li>
-
-        <li class="itemTitle"><a href="https://github.com/maxogden/voxel">voxel</a>
-          <li class="itemDesc">the logic that generates voxel world data and compresses voxel data so that it can be
-          efficiently rendered in 3D. voxel-engine uses this.</li></li>
-
-        <li class="itemTitle"><a href="https://github.com/maxogden/voxel-mesh">voxel-mesh</a>
-          <li class="itemDesc">takes voxel data from the <code>voxel</code> module and turns it into a three.js
-          3D Mesh that can be displayed in a game. voxel-engine also uses this.</li></li>
+         <li class="itemDesc">this is the main module for building voxel games - you can plug any voxel module into the engine. read the readme for a great overview of what is possible with voxel.js</li></li>
       </ul>
-      <img class="essentials-image" src="wireframe-edit.gif">
     <h3><a name="addons" class="anchor" href="#addons"><span class="mini-icon mini-icon-link"></span></a>Add-ons</h3>
       <div class="addons">
         <div class="item" style="background-image: url(thumbs/creatures.png);">
@@ -365,8 +369,7 @@
   "name": "mygamename",
   "version": "0.0.1",
   "dependencies": {
-    "voxel-engine": "0.5.3",
-    "painterly-textures": "0.0.3"
+    "voxel-hello-world": "0.6.0"
   }
 }</code>
     </pre>
@@ -378,18 +381,13 @@ $ npm install</code>
     <p>Next, create <em>mygame.js</em> and put the following code in it:</p>
     <pre class="highlight">
       <code>
-var createGame = require('voxel-engine')
-var texturePath = require('painterly-textures')(__dirname)
-var game = createGame({texturePath: texturePath})
-var container = document.body
-game.appendTo(container)
-game.setupPointerLock(container)
-</code>
+var createGame = require('voxel-hello-world')
+var game = createGame()</code>
     </pre>
     <p>Then to build your game you use <a href="http://browserify.org">browserify</a>:</p>
     <pre class="highlight">
       <code>
-$ npm install browserify@1.17.3 -g
+$ npm install browserify -g
 $ browserify mygame.js -o builtgame.js</code>
     </pre>
     <p>Load builtgame.js into a web page:</p>
@@ -399,16 +397,8 @@ $ browserify mygame.js -o builtgame.js</code>
     &lt;script src=&quot;builtgame.js&quot;&gt;&lt;/script&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-    <p>For images (block textures, player skins, etc) to load correctly you need to serve voxel games from an http server (as opposed to opening the .html file in your browser directly). Here is how to do that using <a href="https://npmjs.org/package/http-server">http-server</a> from npm:</p>
-    <pre class="highlight">
-      <code>
-# install http-server and put it in your command line path
-$ npm install http-server -g
-# start a local server in the local directory
-$ http-server</code>
-    </pre>
-    <p>Now you should be able to play your game by opening up <a href="http://localhost:8080"><code>http://localhost:8080</code></a> in your browser. Look at one of the working examples to learn more.</p>
-    <p>There are also API docs in the <a href="https://github.com/maxogden/voxel-engine#api">voxel-engine readme</a></p>
+    <p>Now you should be able to play your game by opening up index.html in your browser.</p>
+    <p>There are API docs in the <a href="https://github.com/maxogden/voxel-engine#api">voxel-engine readme</a></p>
     <h2><a name="module-authoring" class="anchor" href="#module-authoring"><span class="mini-icon mini-icon-link"></span></a>Making your first node module</h2>
     <p>Check out this guide: <a target="_blank" href="https://gist.github.com/maxogden/5147486">Writing node modules with voxel.js</a></p>
     <p>If you make a voxel.js module and want it featured on the site you can <a href="https://github.com/maxogden/voxeljs.com">fork the source</a> and add your module to the list.</p>
@@ -418,14 +408,11 @@ $ http-server</code>
       is easier.</p>
     <ul class="list">
       <li>any performance improvements at all are always welcome</li>
-      <li>data voxelizers (e.g. <a href="http://www.cs.princeton.edu/~min/binvox/">binvox</a>) for various formats: .stl, .obj,
-        shapefiles, topojson, CSVs or anything else you can think of!</li>
-      <li>load minecraft worlds (or portions of them)</li>
+      <li>voxel water. water blocks that you can swim in!</li>
       <li>in game UI. along the same lines as the <a href="http://github.com/maxogden/toolbar">toolbar</a> module
         -- things to make game makers make games that are easier to use</li>
-      <li>arms for first person players. right now they don't have arms. it is sad</li>
-      <li>a camera mode that lets you fly around <a href="http://mrdoob.github.com/three.js/examples/webgl_geometry_minecraft.html">like this</a></li>
     </ul>
+    <p>Check out the voxel.js twitter account for more inspiration: <a href="http://twitter.com/voxeljs">@voxeljs</a>.</p>
   </article>
   <article id="more">
     <h2>More!</h2>
