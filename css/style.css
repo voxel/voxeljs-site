@@ -66,6 +66,7 @@ header a:hover {color: #AEC126; border-bottom: 1px solid #AEC126;}
 #imgWrapper a {border: none; padding: 0px;}
 
 .exampleItem {display: inline-block; position: relative; margin: 0px 18px 34px 0px;  }
+.exampleItem a {display: block; }
 .exampleItem cite {float: left; position: absolute;  }
 
 /* MODULES */
