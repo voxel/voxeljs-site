@@ -2,199 +2,204 @@
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>voxel.js * blocks in yo browser</title>
-  <meta name="description" content="javascript multiplayer voxel engine">
-  <meta name="viewport" content="width=device-width">
-  <link rel"shortcut icon" href="favicon.ico">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>voxel.js * blocks in yo browser</title>
+    <meta name="description" content="javascript multiplayer voxel engine">
+    <meta name="viewport" content="width=device-width">
+    <link rel"shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 </head>
+
 <body>
-  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-<div id="wrapper">
-  <article id="intro">
-    <header>
-      <div class="title">voxel.js</div>
-      <div class="voxelogo">
-        <ul id="cube">
-          <li class="front">JS&nbsp;
-          <li class="back">
-          <li class="right">
-          <li class="left">
-          <li class="top">
-          <li class="bottom">
-        </ul>
-      </div>
-      <h3>an open source voxel game building toolkit for modern web browsers</h3>
+    <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+    <div id="wrapper">
+        <article id="intro">
+            <header>
+                <div class="title">voxel.js</div>
+                <div class="voxelogo">
+                    <ul id="cube">
+                        <li class="front">JS&nbsp;
+                        <li class="back">
+                        <li class="right">
+                        <li class="left">
+                        <li class="top">
+                        <li class="bottom">
+                    </ul>
+                </div>
+                <h3>an open source voxel game building toolkit for modern web browsers</h3>
 
-      <ul class="top-nav">
-        <li><a href="#what">About</a></li>
-        <li><a href="#gallery">Examples</a></li>
-        <li><a href="#modules">Modules</a></li>
-        <li><a href="#how">How</a></li>
-        <li>
-          <a href="https://twitter.com/voxeljs" class="twitter-follow-button" data-show-count="false" data-dnt="true" target="_blank">Follow @voxeljs</a>
-        </li>
-        <li>
-          <a href="http://webchat.freenode.net/?randomnick=1&channels=voxel.js" target="_blank">#voxel.js on freenode</a>
-        </li>
-      </ul>
+                <ul class="top-nav">
+                    <li><a href="#what">About</a></li>
+                    <li><a href="#gallery">Examples</a></li>
+                    <li><a href="#modules">Modules</a></li>
+                    <li><a href="#how">How</a></li>
+                    <li>
+                        <a href="https://twitter.com/voxeljs" class="twitter-follow-button" data-show-count="false" data-dnt="true" target="_blank">Follow @voxeljs</a>
+                    </li>
+                    <li>
+                        <a href="http://webchat.freenode.net/?randomnick=1&channels=voxel.js" target="_blank">#voxel.js on freenode</a>
+                    </li>
+                </ul>
 
-      <nav class="next-prev">
-        <a class="next what" href="#what">&darr;</a>
-      </nav>
-    </header>
-  </article>
+                <nav class="next-prev">
+                    <a class="next what" href="#what">&darr;</a>
+                </nav>
+            </header>
+        </article>
 
-  <article id="what">
-    <img src="awesome2.gif" width="350px">
-    <h2><a name="what" class="anchor" href="#what"><span class="mini-icon mini-icon-link"></span></a>About</h2>
-    <p>voxel.js is a collection of projects that make it easier than ever to
-        create 3D voxel games like Minecraft all in the browser.</p>
-    <p>It was written by <a href="http://twitter.com/maxogden">@maxogden</a> and <a href="http://twitter.com/substack">@substack</a>, two non-game developers that want to make voxel games easy, fun and modular, but is now collectively maintained by nearly 100 contributors.</p>
-    <iframe style="float: right; padding: 20px; " width="420" height="315" src="http://www.youtube.com/embed/8gM3xMObEz4" frameborder="0" allowfullscreen></iframe>
-    <h2><a name="watch" class="anchor" href="#watch"><span class="mini-icon mini-icon-link"></span></a>Watch</h2>
-    <p>Here is a presentation from May 2013 that covers all the exciting stuff that happened in voxel.js land up to that point.</p>
-    <p>Also definitely read <a href="https://medium.com/p/494be64dd1cc">this great blog post about Voxel.js in 2014</a> by <a href="https://github.com/deathcap">@deathcap</a></p>
-    <h2><a name="contribute" class="anchor" href="#contribute"><span class="mini-icon mini-icon-link"></span></a>Contribute</h2>
-    <p>All of the code is open source! If you find bugs or have ideas for improvements please open issues for them on the related github project, or better yet send code or write new modules.</a>
+        <article id="what">
+            <img src="awesome2.gif" width="350px">
+            <h2><a name="what" class="anchor" href="#what"><span class="mini-icon mini-icon-link"></span></a>About</h2>
+            <p>voxel.js is a collection of projects that make it easier than ever to
+                create 3D voxel games like Minecraft all in the browser.</p>
+            <p>It was written by <a href="http://twitter.com/maxogden">@maxogden</a> and <a href="http://twitter.com/substack">@substack</a>, two non-game developers that want to make voxel games easy, fun and modular, but is now collectively maintained by nearly 100 contributors.</p>
+            <iframe style="float: right; padding: 20px; " width="420" height="315" src="http://www.youtube.com/embed/8gM3xMObEz4" frameborder="0" allowfullscreen></iframe>
+            <h2><a name="watch" class="anchor" href="#watch"><span class="mini-icon mini-icon-link"></span></a>Watch</h2>
+            <p>Here is a presentation from May 2013 that covers all the exciting stuff that happened in voxel.js land up to that point.</p>
+            <p>Also definitely read <a href="https://medium.com/p/494be64dd1cc">this great blog post about Voxel.js in 2014</a> by <a href="https://github.com/deathcap">@deathcap</a></p>
+            <h2><a name="contribute" class="anchor" href="#contribute"><span class="mini-icon mini-icon-link"></span></a>Contribute</h2>
+            <p>All of the code is open source! If you find bugs or have ideas for improvements please open issues for them on the related github project, or better yet send code or write new modules.</a>
 
-  </article>
+        </article>
 
-  <article id="gallery">
-    <h2><a name="gallery" class="anchor" href="#gallery"><span class="mini-icon mini-icon-link"></span></a>Examples</h2>
-    <p>voxel.js games require a computer that can run WebGL, the HTML5 3D graphics
-      engine. Visit <a href="http://get.webgl.org/">get.webgl.org</a> to see if your
-      current browser supports it. Chrome version 23 or above or Firefox version
-      17 or above are recommended.</p>
-    
-    <p>Click on the screenshots below to run the demos in your browser:</p>
-    
-    <div id="imgWrapper">
-      <div class="exampleItem">
-        <a href="http://gifblocks.com/" target="_blank"><img src="demos/1.png"></a>
-        <cite><a href="https://github.com/maxogden/gifblocks/blob/gh-pages/demo.js" target="_blank">view source on github</a></cite>
-      </div>
-      <div class="exampleItem">
-        <a href="http://shama.github.com/voxel-drone/" target="_blank"><img src="demos/8.png"></a>
-        <cite><a href="https://github.com/shama/voxel-drone/blob/master/example/world.js" target="_blank">view source on github</a></cite>
-      </div>
-      <div class="exampleItem">
-        <a href="http://substack.net/projects/voxel-forest/" target="_blank"><img src="demos/2.png"></a>
-        <cite><a href="https://github.com/substack/voxel-forest/blob/master/example/forest.js" target="_blank">view source on github</a></cite>
-      </div>
-      <div class="exampleItem">
-        <a href="http://www.voxel-warriors.com/" target="_blank"><img src="demos/voxel-warriors.png"></a>
-        <cite><a href="https://github.com/CodeRect/voxel-warriors" target="_blank">view source on github</a></cite>
-      </div>
-      <div class="exampleItem">
-        <a href="http://shama.github.com/voxel-share/" target="_blank"><img src="demos/17.png"></a>
-        <cite><a href="https://github.com/shama/voxel-share/blob/master/example/world.js" target="_blank">view source on github</a></cite>
-      </div>
-      <div class="exampleItem">
-        <a href="http://theoxylo.github.com/voxel-life" target="_blank"><img src="demos/voxel-life.png"></a>
-        <cite><a href="https://github.com/theoxylo/voxel-life" target="_blank">view source on github</a></cite>
-      </div>
-      <div class="exampleItem">
-        <a href="http://shama.github.com/voxel-sky/" target="_blank"><img src="demos/10.png"></a>
-        <cite><a href="https://github.com/shama/voxel-sky/blob/master/example/world.js" target="_blank">view source on github</a></cite>
-      </div>
-      <div class="exampleItem">
-        <a href="http://maxogden.github.com/voxel-script-gun/" target="_blank"><img src="demos/11.png"></a>
-        <cite><a href="https://github.com/maxogden/voxel-script-gun/blob/master/demo.js" target="_blank">view source on github</a></cite>
-      </div>
-      <div class="exampleItem">
-        <a href="http://hughsk.github.com/voxel-pp/" target="_blank"><img src="demos/13.png"></a>
-        <cite><a href="https://github.com/hughsk/voxel-pp/blob/master/demo.js" target="_blank">view source on github</a></cite>
-      </div>
-      <div class="exampleItem">
-        <a href="http://didact.us/spatial-events/" target="_blank"><img src="demos/14.png"></a>
-        <cite><a href="https://github.com/chrisdickinson/spatial-events/blob/gh-pages/index.js#L75-L79" target="_blank">view source on github</a></cite>
-      </div>
-      <div class="exampleItem">
-        <a href="http://robbles.github.com/voxel-rescue/" target="_blank"><img src="demos/15.png"></a>
-        <cite><a href="https://github.com/robbles/voxel-rescue/blob/master/demo.js" target="_blank">view source on github</a></cite>
-      </div>
-      <div class="exampleItem">
-        <a href="http://troffmo5.github.com/voxel-oculus/" target="_blank"><img src="demos/16.png"></a>
-        <cite><a href="https://github.com/troffmo5/voxel-oculus/blob/master/demo.js" target="_blank">view source on github</a></cite>
-      </div>
-      <div class="exampleItem">
-        <a href="http://shama.github.com/voxel-snow" target="_blank"><img src="demos/18.png"></a>
-        <cite>
-          <a href="https://github.com/shama/voxel-snow/blob/master/example/world.js" target="_blank">view source on github</a>
-        </cite>
-      </div>
-      <div class="exampleItem">
-        <a href="http://substack.net/projects/voxel-creature/" target="_blank"><img src="demos/3.png"></a>
-        <cite><a href="https://github.com/substack/voxel-creature/blob/master/example/debris.js" target="_blank">view source on github</a></cite>
-      </div>  
-      <div class="exampleItem">
-        <a href="http://maxogden.github.com/voxel-perlin-terrain/" target="_blank"><img src="demos/4.png"></a>
-        <cite><a href="https://github.com/maxogden/voxel-perlin-terrain/blob/master/demo.js" target="_blank">view source on github</a></cite>
-      </div>  
-      <div class="exampleItem">
-        <a href="http://substack.net/projects/radial-voxel-terrain" target="_blank"><img src="demos/5.png"></a>
-      </div>  
-      <div class="exampleItem">
-        <a href="http://maxogden.github.com/voxel-simplex-terrain/?seed=typearandomsentencehere!" target="_blank"><img src="demos/6.png"></a>
-        <cite><a href="https://github.com/maxogden/voxel-simplex-terrain/blob/master/demo.js" target="_blank">view source on github</a></cite>
-      </div>  
-      <div class="exampleItem">
-        <a href="http://maxogden.github.com/voxel-world-function/" target="_blank"><img src="demos/7.png"></a>
-        <cite><a href="https://github.com/maxogden/voxel-world-function/blob/master/demo.js" target="_blank">view source on github</a></cite>
-      </div>
-      <div class="exampleItem">
-        <a href="http://substack.net/projects/voxel-portal/" target="_blank"><img src="demos/9.png"></a>
-        <cite><a href="https://github.com/substack/voxel-portal/blob/master/example/world.js" target="_blank">view source on github</a></cite>
-      </div>
-    </div>
-  </article>
+        <article id="gallery">
+            <h2><a name="gallery" class="anchor" href="#gallery"><span class="mini-icon mini-icon-link"></span></a>Examples</h2>
+            <p>voxel.js games require a computer that can run WebGL, the HTML5 3D graphics
+                engine. Visit <a href="http://get.webgl.org/">get.webgl.org</a> to see if your
+                current browser supports it. Chrome version 23 or above or Firefox version
+                17 or above are recommended.</p>
 
-  <article id="modules">
-    <h2><a name="modules" class="anchor" href="#modules"><span class="mini-icon mini-icon-link"></span></a>Components</h2>
-    <p>Instead of making a giant game framework we instead decided to split voxel.js
-      up into a bunch of small building blocks (modules). Modules can be installed
-      with <a href="http://npmjs.org">npm</a>, the package manager from <a href="http://nodejs.org">node.js</a>.
-      Here are some modules that we have already started working on:</p>
+            <p>Click on the screenshots below to run the demos in your browser:</p>
 
-    <h3>The Core</h3>
-      <ul class="essentials">
-        <li class="itemTitle"><a href="https://github.com/maxogden/voxel-engine">voxel-engine</a>
-         <li class="itemDesc">this is the main module for building voxel games - you can plug any voxel module into the engine. read the readme for a great overview of what is possible with voxel.js</li></li>
-      </ul>
-    <h3><a name="addons" class="anchor" href="#addons"><span class="mini-icon mini-icon-link"></span></a>Add-ons</h3>
-      <div class="addons">
-        <p>There are around 200 addons for voxel.js published on <a href="https://www.npmjs.org/search?q=voxel">NPM</a>, here are live search results for all the modules on NPM with word 'voxel' in the title/description:</p>
-        <iframe width="800" height="315" src="http://requirebin.com/embed?gist=42912696f0f6f7355464" frameborder="0" allowfullscreen></iframe>
-      </div>
-      
-  </article>
-  
-  <article id="utilities">
-    <h2><a name="utilities" class="anchor" href="#utilities"><span class="mini-icon mini-icon-link"></span></a>Tools & Utilities</h2>
-    
-    <div class="item" style="background-image: url(thumbs/painter.png);">
-      <a class="itemTitle" target="_blank" href="http://voxelbuilder.com">Voxel Builder</a>
-      <div class="itemDesc">voxel object/creature editor that runs in your browser and lets you save/export/share your creation</div>
-    </div>
-  </article>
-  
-  <article id="how">
-    <h2><a name="how" class="anchor" href="#how"><span class="mini-icon mini-icon-link"></span></a>Making your first game</h2>
-    <h2>Making a game from the command line</h2>
-    <p>Here is a handy video screencast from <a target="_blank" href="http://twitter.com/shamakry">@shamakry</a> that will teach you how to get started in under 10 minutes:</p>
-    <iframe width="420" height="315" src="http://www.youtube.com/embed/khWOLOL2SzA" frameborder="0" allowfullscreen></iframe>
-    <p>If you don't wanna watch a video you can follow these instructions instead:</p>
-    <p>To use the voxel.js modules you will need to install <a href="http://nodejs.org">node.js</a> (which
-      will also install npm) and be able to use your computer's command line.</p>
-    <p>Once node.js is installed, you can install the basic voxel.js npm package in your project directory, and then install a basic texture pack. Make a file called <code>package.json</code> in your project directory and give it these contents:</p>
-    <pre class="highlight">
+            <div id="imgWrapper">
+                <div class="exampleItem">
+                    <a href="http://gifblocks.com/" target="_blank"><img src="demos/1.png"></a>
+                    <cite><a href="https://github.com/maxogden/gifblocks/blob/gh-pages/demo.js" target="_blank">view source on github</a></cite>
+                </div>
+                <div class="exampleItem">
+                    <a href="http://shama.github.com/voxel-drone/" target="_blank"><img src="demos/8.png"></a>
+                    <cite><a href="https://github.com/shama/voxel-drone/blob/master/example/world.js" target="_blank">view source on github</a></cite>
+                </div>
+                <div class="exampleItem">
+                    <a href="http://substack.net/projects/voxel-forest/" target="_blank"><img src="demos/2.png"></a>
+                    <cite><a href="https://github.com/substack/voxel-forest/blob/master/example/forest.js" target="_blank">view source on github</a></cite>
+                </div>
+                <div class="exampleItem">
+                    <a href="http://www.voxel-warriors.com/" target="_blank"><img src="demos/voxel-warriors.png"></a>
+                    <cite><a href="https://github.com/CodeRect/voxel-warriors" target="_blank">view source on github</a></cite>
+                </div>
+                <div class="exampleItem">
+                    <a href="http://shama.github.com/voxel-share/" target="_blank"><img src="demos/17.png"></a>
+                    <cite><a href="https://github.com/shama/voxel-share/blob/master/example/world.js" target="_blank">view source on github</a></cite>
+                </div>
+                <div class="exampleItem">
+                    <a href="http://theoxylo.github.com/voxel-life" target="_blank"><img src="demos/voxel-life.png"></a>
+                    <cite><a href="https://github.com/theoxylo/voxel-life" target="_blank">view source on github</a></cite>
+                </div>
+                <div class="exampleItem">
+                    <a href="http://shama.github.com/voxel-sky/" target="_blank"><img src="demos/10.png"></a>
+                    <cite><a href="https://github.com/shama/voxel-sky/blob/master/example/world.js" target="_blank">view source on github</a></cite>
+                </div>
+                <div class="exampleItem">
+                    <a href="http://maxogden.github.com/voxel-script-gun/" target="_blank"><img src="demos/11.png"></a>
+                    <cite><a href="https://github.com/maxogden/voxel-script-gun/blob/master/demo.js" target="_blank">view source on github</a></cite>
+                </div>
+                <div class="exampleItem">
+                    <a href="http://hughsk.github.com/voxel-pp/" target="_blank"><img src="demos/13.png"></a>
+                    <cite><a href="https://github.com/hughsk/voxel-pp/blob/master/demo.js" target="_blank">view source on github</a></cite>
+                </div>
+                <div class="exampleItem">
+                    <a href="http://didact.us/spatial-events/" target="_blank"><img src="demos/14.png"></a>
+                    <cite><a href="https://github.com/chrisdickinson/spatial-events/blob/gh-pages/index.js#L75-L79" target="_blank">view source on github</a></cite>
+                </div>
+                <div class="exampleItem">
+                    <a href="http://robbles.github.com/voxel-rescue/" target="_blank"><img src="demos/15.png"></a>
+                    <cite><a href="https://github.com/robbles/voxel-rescue/blob/master/demo.js" target="_blank">view source on github</a></cite>
+                </div>
+                <div class="exampleItem">
+                    <a href="http://troffmo5.github.com/voxel-oculus/" target="_blank"><img src="demos/16.png"></a>
+                    <cite><a href="https://github.com/troffmo5/voxel-oculus/blob/master/demo.js" target="_blank">view source on github</a></cite>
+                </div>
+                <div class="exampleItem">
+                    <a href="http://shama.github.com/voxel-snow" target="_blank"><img src="demos/18.png"></a>
+                    <cite>
+                        <a href="https://github.com/shama/voxel-snow/blob/master/example/world.js" target="_blank">view source on github</a>
+                    </cite>
+                </div>
+                <div class="exampleItem">
+                    <a href="http://substack.net/projects/voxel-creature/" target="_blank"><img src="demos/3.png"></a>
+                    <cite><a href="https://github.com/substack/voxel-creature/blob/master/example/debris.js" target="_blank">view source on github</a></cite>
+                </div>
+                <div class="exampleItem">
+                    <a href="http://maxogden.github.com/voxel-perlin-terrain/" target="_blank"><img src="demos/4.png"></a>
+                    <cite><a href="https://github.com/maxogden/voxel-perlin-terrain/blob/master/demo.js" target="_blank">view source on github</a></cite>
+                </div>
+                <div class="exampleItem">
+                    <a href="http://substack.net/projects/radial-voxel-terrain" target="_blank"><img src="demos/5.png"></a>
+                </div>
+                <div class="exampleItem">
+                    <a href="http://maxogden.github.com/voxel-simplex-terrain/?seed=typearandomsentencehere!" target="_blank"><img src="demos/6.png"></a>
+                    <cite><a href="https://github.com/maxogden/voxel-simplex-terrain/blob/master/demo.js" target="_blank">view source on github</a></cite>
+                </div>
+                <div class="exampleItem">
+                    <a href="http://maxogden.github.com/voxel-world-function/" target="_blank"><img src="demos/7.png"></a>
+                    <cite><a href="https://github.com/maxogden/voxel-world-function/blob/master/demo.js" target="_blank">view source on github</a></cite>
+                </div>
+                <div class="exampleItem">
+                    <a href="http://substack.net/projects/voxel-portal/" target="_blank"><img src="demos/9.png"></a>
+                    <cite><a href="https://github.com/substack/voxel-portal/blob/master/example/world.js" target="_blank">view source on github</a></cite>
+                </div>
+            </div>
+        </article>
+
+        <article id="modules">
+            <h2><a name="modules" class="anchor" href="#modules"><span class="mini-icon mini-icon-link"></span></a>Components</h2>
+            <p>Instead of making a giant game framework we instead decided to split voxel.js
+                up into a bunch of small building blocks (modules). Modules can be installed
+                with <a href="http://npmjs.org">npm</a>, the package manager from <a href="http://nodejs.org">node.js</a>.
+                Here are some modules that we have already started working on:</p>
+
+            <h3>The Core</h3>
+            <ul class="essentials">
+                <li class="itemTitle"><a href="https://github.com/maxogden/voxel-engine">voxel-engine</a>
+                <li class="itemDesc">this is the main module for building voxel games - you can plug any voxel module into the engine. read the readme for a great overview of what is possible with voxel.js</li>
+                </li>
+            </ul>
+            <h3><a name="addons" class="anchor" href="#addons"><span class="mini-icon mini-icon-link"></span></a>Add-ons</h3>
+            <div class="addons">
+                <p>There are around 200 addons for voxel.js published on <a href="https://www.npmjs.org/search?q=voxel">NPM</a>, here are live search results for all the modules on NPM with word 'voxel' in the title/description:</p>
+                <iframe width="800" height="315" src="http://requirebin.com/embed?gist=42912696f0f6f7355464" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+        </article>
+
+        <article id="utilities">
+            <h2><a name="utilities" class="anchor" href="#utilities"><span class="mini-icon mini-icon-link"></span></a>Tools & Utilities</h2>
+
+            <div class="item" style="background-image: url(thumbs/painter.png);">
+                <a class="itemTitle" target="_blank" href="http://voxelbuilder.com">Voxel Builder</a>
+                <div class="itemDesc">voxel object/creature editor that runs in your browser and lets you save/export/share your creation</div>
+            </div>
+        </article>
+
+        <article id="how">
+            <h2><a name="how" class="anchor" href="#how"><span class="mini-icon mini-icon-link"></span></a>Making your first game</h2>
+            <h2>Making a game from the command line</h2>
+            <p>Here is a handy video screencast from <a target="_blank" href="http://twitter.com/shamakry">@shamakry</a> that will teach you how to get started in under 10 minutes:</p>
+            <iframe width="420" height="315" src="http://www.youtube.com/embed/khWOLOL2SzA" frameborder="0" allowfullscreen></iframe>
+            <p>If you don't wanna watch a video you can follow these instructions instead:</p>
+            <p>To use the voxel.js modules you will need to install <a href="http://nodejs.org">node.js</a> (which
+                will also install npm) and be able to use your computer's command line.</p>
+            <p>Once node.js is installed, you can install the basic voxel.js npm package in your project directory, and then install a basic texture pack. Make a file called <code>package.json</code> in your project directory and give it these contents:</p>
+            <pre class="highlight">
       <code>
 {
   "name": "mygamename",
@@ -204,241 +209,240 @@
   }
 }</code>
     </pre>
-    <p>Now you can tell node to install your dependencies:</p>
-    <pre class="highlight">
+            <p>Now you can tell node to install your dependencies:</p>
+            <pre class="highlight">
       <code>
 $ npm install</code>
     </pre>
-    <p>Next, create <em>mygame.js</em> and put the following code in it:</p>
-    <pre class="highlight">
+            <p>Next, create <em>mygame.js</em> and put the following code in it:</p>
+            <pre class="highlight">
       <code>
 var createGame = require('voxel-hello-world')
 var game = createGame()</code>
     </pre>
-    <p>Then to build your game you use <a href="http://browserify.org">browserify</a>:</p>
-    <pre class="highlight">
+            <p>Then to build your game you use <a href="http://browserify.org">browserify</a>:</p>
+            <pre class="highlight">
       <code>
 $ npm install browserify -g
 $ browserify mygame.js -o builtgame.js</code>
     </pre>
-    <p>Load builtgame.js into a web page:</p>
-    <pre class="highlight"><code>&lt;!doctype html&gt;
+            <p>Load builtgame.js into a web page:</p>
+            <pre class="highlight"><code>&lt;!doctype html&gt;
 &lt;html&gt;
   &lt;body&gt;
     &lt;script src=&quot;builtgame.js&quot;&gt;&lt;/script&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-    <p>Now you should be able to play your game by opening up index.html in your browser.</p>
-    <p>There are API docs in the <a href="https://github.com/maxogden/voxel-engine#api">voxel-engine readme</a></p>
-  </article>
-  <article id="get-involved">
-    <h2><a name="get-involved" class="anchor" href="#get-involved"><span class="mini-icon mini-icon-link"></span></a>Get Involved</h2>
-    <p>Here are some ways to learn and/or get involved with voxel.js:</p>
-      <h3>
-    <a name="resources" class="anchor" href="#resources"><span class="octicon octicon-link"></span></a>Resources</h3>
-      <ul class="list">
-        <li>Voxel.js website: <a href="http://voxeljs.com">http://voxeljs.com</a>
+            <p>Now you should be able to play your game by opening up index.html in your browser.</p>
+            <p>There are API docs in the <a href="https://github.com/maxogden/voxel-engine#api">voxel-engine readme</a></p>
+        </article>
+        <article id="get-involved">
+            <h2><a name="get-involved" class="anchor" href="#get-involved"><span class="mini-icon mini-icon-link"></span></a>Get Involved</h2>
+            <p>Here are some ways to learn and/or get involved with voxel.js:</p>
+            <h3>
+                <a name="resources" class="anchor" href="#resources"><span class="octicon octicon-link"></span></a>Resources</h3>
+            <ul class="list">
+                <li>Voxel.js website: <a href="http://voxeljs.com">http://voxeljs.com</a>
 
-        </li>
-        <li>Write voxel.js apps in your browser: <a href="http://creator.voxeljs.com">http://creator.voxeljs.com</a>
+                </li>
+                <li>Write voxel.js apps in your browser: <a href="http://creator.voxeljs.com">http://creator.voxeljs.com</a>
 
-        </li>
-        <li>Find voxel modules: <a href="https://npmjs.org/search?q=voxel">https://npmjs.org/search?q=voxel</a>
+                </li>
+                <li>Find voxel modules: <a href="https://npmjs.org/search?q=voxel">https://npmjs.org/search?q=voxel</a>
 
-        </li>
-        <li>Design a voxel creature: <a href="http://voxelbuilder.com/">http://voxelbuilder.com/</a>
+                </li>
+                <li>Design a voxel creature: <a href="http://voxelbuilder.com/">http://voxelbuilder.com/</a>
 
-        </li>
-        <li>Voxel.js development how-to screencast (OS X): <a href="http://www.youtube.com/watch?v=khWOLOL2SzA">http://www.youtube.com/watch?v=khWOLOL2SzA</a>
+                </li>
+                <li>Voxel.js development how-to screencast (OS X): <a href="http://www.youtube.com/watch?v=khWOLOL2SzA">http://www.youtube.com/watch?v=khWOLOL2SzA</a>
 
-        </li>
-        <li>Voxel.js development how-to (article): <a href="https://gist.github.com/maxogden/5147486">https://gist.github.com/maxogden/5147486</a>
+                </li>
+                <li>Voxel.js development how-to (article): <a href="https://gist.github.com/maxogden/5147486">https://gist.github.com/maxogden/5147486</a>
 
-        </li>
-        <li>Voxel.js logos: <a href="http://voxeljs.com/voxeljs-logos.png">http://voxeljs.com/voxeljs-logos.png</a>
+                </li>
+                <li>Voxel.js logos: <a href="http://voxeljs.com/voxeljs-logos.png">http://voxeljs.com/voxeljs-logos.png</a>
 
-        </li>
-        <li>Basics of Three.js: <a href="http://fhtr.org/BasicsOfThreeJS/">http://fhtr.org/BasicsOfThreeJS/</a>
+                </li>
+                <li>Basics of Three.js: <a href="http://fhtr.org/BasicsOfThreeJS/">http://fhtr.org/BasicsOfThreeJS/</a>
 
-        </li>
-        <li>Great book on artistic/algorithmic coding: <a href="http://natureofcode.com/">http://natureofcode.com/</a>
+                </li>
+                <li>Great book on artistic/algorithmic coding: <a href="http://natureofcode.com/">http://natureofcode.com/</a>
 
-        </li>
-        <li>Have an idea? Ask a question or discuss things at <a href="https://github.com/voxel/issues">https://github.com/voxel/issues</a>
+                </li>
+                <li>Have an idea? Ask a question or discuss things at <a href="https://github.com/voxel/issues">https://github.com/voxel/issues</a>
 
-        </li>
-        <li>BlockPlot: Voxel.js hosting service (still in beta): <a href="http://blockplot.com">http://blockplot.com</a>
+                </li>
+                <li>BlockPlot: Voxel.js hosting service (still in beta): <a href="http://blockplot.com">http://blockplot.com</a>
 
-        </li>
-        <li>How our voxel rendering works: <a href="http://0fps.wordpress.com/2012/06/30/meshing-in-a-minecraft-game/">http://0fps.wordpress.com/2012/06/30/meshing-in-a-minecraft-game/</a>
+                </li>
+                <li>How our voxel rendering works: <a href="http://0fps.wordpress.com/2012/06/30/meshing-in-a-minecraft-game/">http://0fps.wordpress.com/2012/06/30/meshing-in-a-minecraft-game/</a>
 
-        </li>
-        <li>Learn about shaders: <a href="http://www.html5rocks.com/en/tutorials/webgl/shaders/">http://www.html5rocks.com/en/tutorials/webgl/shaders/</a> and
-          examples at: <a href="https://www.shadertoy.com/">https://www.shadertoy.com/</a>
+                </li>
+                <li>Learn about shaders: <a href="http://www.html5rocks.com/en/tutorials/webgl/shaders/">http://www.html5rocks.com/en/tutorials/webgl/shaders/</a> and
+                    examples at: <a href="https://www.shadertoy.com/">https://www.shadertoy.com/</a>
 
-        </li>
-      </ul>
-      <h3>
-    <a name="repositories-that-you-are-encouraged-to-hack-on" class="anchor" href="#repositories-that-you-are-encouraged-to-hack-on"><span class="octicon octicon-link"></span></a>Repositories you can hack on</h3>
+                </li>
+            </ul>
+            <h3>
+                <a name="repositories-that-you-are-encouraged-to-hack-on" class="anchor" href="#repositories-that-you-are-encouraged-to-hack-on"><span class="octicon octicon-link"></span></a>Repositories you can hack on</h3>
 
-      <ul class="list">
-        <li>P2P 2 player multiplayer: <a href="https://github.com/maxogden/ludum-dare-26">https://github.com/maxogden/ludum-dare-26</a>
+            <ul class="list">
+                <li>P2P 2 player multiplayer: <a href="https://github.com/maxogden/ludum-dare-26">https://github.com/maxogden/ludum-dare-26</a>
 
-        </li>
-        <li>Node.js multiplayer server: <a href="https://github.com/maxogden/voxel-server">https://github.com/maxogden/voxel-server</a> and
-          client: <a href="https://github.com/maxogden/voxel-client">https://github.com/maxogden/voxel-client</a>
+                </li>
+                <li>Node.js multiplayer server: <a href="https://github.com/maxogden/voxel-server">https://github.com/maxogden/voxel-server</a> and
+                    client: <a href="https://github.com/maxogden/voxel-client">https://github.com/maxogden/voxel-client</a>
 
-        </li>
-        <li>Voxel walk animation: <a href="https://github.com/flyswatter/voxel-walk">https://github.com/flyswatter/voxel-walk</a>
+                </li>
+                <li>Voxel walk animation: <a href="https://github.com/flyswatter/voxel-walk">https://github.com/flyswatter/voxel-walk</a>
 
-        </li>
-        <li>Load a minecraft world: <a href="https://github.com/maxogden/mca2js">https://github.com/maxogden/mca2js</a>
+                </li>
+                <li>Load a minecraft world: <a href="https://github.com/maxogden/mca2js">https://github.com/maxogden/mca2js</a>
 
-        </li>
-        <li>Minecraft items: <a href="https://github.com/maxogden/minecraft-blockinfo">https://github.com/maxogden/minecraft-blockinfo</a>
+                </li>
+                <li>Minecraft items: <a href="https://github.com/maxogden/minecraft-blockinfo">https://github.com/maxogden/minecraft-blockinfo</a>
 
-        </li>
-        <li>Store voxel worlds in IndexedDB: <a href="https://github.com/maxogden/voxel-level">https://github.com/maxogden/voxel-level</a>
+                </li>
+                <li>Store voxel worlds in IndexedDB: <a href="https://github.com/maxogden/voxel-level">https://github.com/maxogden/voxel-level</a>
 
-        </li>
-        <li>Voxel virus (with a minimal voxel water demo): <a href="https://github.com/shama/voxel-virus">https://github.com/shama/voxel-virus</a>
+                </li>
+                <li>Voxel virus (with a minimal voxel water demo): <a href="https://github.com/shama/voxel-virus">https://github.com/shama/voxel-virus</a>
 
-        </li>
-        <li>Voxel 3D bulk selections: <a href="https://github.com/maxogden/voxel-select">https://github.com/maxogden/voxel-select</a>
+                </li>
+                <li>Voxel 3D bulk selections: <a href="https://github.com/maxogden/voxel-select">https://github.com/maxogden/voxel-select</a>
 
-        </li>
-        <li><a href="https://github.com/maxogden/gifblocks">https://github.com/maxogden/gifblocks</a>
-        </li>
-        <li>Voxel GIF animation studio: <a href="https://github.com/maxogden/gifblocks">https://github.com/maxogden/gifblocks</a>
+                </li>
+                <li><a href="https://github.com/maxogden/gifblocks">https://github.com/maxogden/gifblocks</a>
+                </li>
+                <li>Voxel GIF animation studio: <a href="https://github.com/maxogden/gifblocks">https://github.com/maxogden/gifblocks</a>
 
-        </li>
-        <li>Implement a voxel monster loader for: <a href="https://github.com/maxogden/voxel-mobs">https://github.com/maxogden/voxel-mobs</a>
+                </li>
+                <li>Implement a voxel monster loader for: <a href="https://github.com/maxogden/voxel-mobs">https://github.com/maxogden/voxel-mobs</a>
 
-        </li>
-        <li>3D City Loader: <a href="https://github.com/maxogden/voxel-city">https://github.com/maxogden/voxel-city</a>
+                </li>
+                <li>3D City Loader: <a href="https://github.com/maxogden/voxel-city">https://github.com/maxogden/voxel-city</a>
 
-        </li>
-        <li>Player physics and movement (needs some tweaking): <a href="https://github.com/maxogden/voxel-physical">https://github.com/maxogden/voxel-physical</a>,
-          <a
-          href="https://github.com/maxogden/kb-controls">https://github.com/maxogden/kb-controls</a>, <a href="https://github.com/maxogden/voxel-player">https://github.com/maxogden/voxel-player</a> and
-            <a
-            href="https://github.com/chrisdickinson/voxel-control/blob/master/index.js">https://github.com/chrisdickinson/voxel-control/blob/master/index.js</a>
-        </li>
-        <li>Voxel drone: <a href="https://github.com/shama/voxel-drone">https://github.com/shama/voxel-drone</a>
+                </li>
+                <li>Player physics and movement (needs some tweaking): <a href="https://github.com/maxogden/voxel-physical">https://github.com/maxogden/voxel-physical</a>,
+                    <a href="https://github.com/maxogden/kb-controls">https://github.com/maxogden/kb-controls</a>, <a href="https://github.com/maxogden/voxel-player">https://github.com/maxogden/voxel-player</a> and
+                    <a href="https://github.com/chrisdickinson/voxel-control/blob/master/index.js">https://github.com/chrisdickinson/voxel-control/blob/master/index.js</a>
+                </li>
+                <li>Voxel drone: <a href="https://github.com/shama/voxel-drone">https://github.com/shama/voxel-drone</a>
 
-        </li>
-        <li>Voxel script gun: <a href="https://github.com/maxogden/voxel-script-gun">https://github.com/maxogden/voxel-script-gun</a>
+                </li>
+                <li>Voxel script gun: <a href="https://github.com/maxogden/voxel-script-gun">https://github.com/maxogden/voxel-script-gun</a>
 
-        </li>
-        <li>Mobile/touch controls: <a href="https://github.com/voxel/issues/issues/2">https://github.com/voxel/issues/issues/2</a>
+                </li>
+                <li>Mobile/touch controls: <a href="https://github.com/voxel/issues/issues/2">https://github.com/voxel/issues/issues/2</a>
 
-        </li>
-        <li>Voxel world function: <a href="https://github.com/maxogden/voxel-world-function">https://github.com/maxogden/voxel-world-function</a>
+                </li>
+                <li>Voxel world function: <a href="https://github.com/maxogden/voxel-world-function">https://github.com/maxogden/voxel-world-function</a>
 
-        </li>
-        <li>Real Voxel Physics: <a href="https://github.com/timoxley/voxel-real-physics">https://github.com/timoxley/voxel-real-physics</a>
+                </li>
+                <li>Real Voxel Physics: <a href="https://github.com/timoxley/voxel-real-physics">https://github.com/timoxley/voxel-real-physics</a>
 
-        </li>
-        <li>Minecraft Multiplayer Bot Visualizer: <a href="https://github.com/vogonistic/mineflayer-voxel">https://github.com/vogonistic/mineflayer-voxel</a>
+                </li>
+                <li>Minecraft Multiplayer Bot Visualizer: <a href="https://github.com/vogonistic/mineflayer-voxel">https://github.com/vogonistic/mineflayer-voxel</a>
 
-        </li>
-        <li>Voxel color post processors: <a href="http://hughsk.github.io/voxel-colorist/demo/">http://hughsk.github.io/voxel-colorist/demo/</a>
+                </li>
+                <li>Voxel color post processors: <a href="http://hughsk.github.io/voxel-colorist/demo/">http://hughsk.github.io/voxel-colorist/demo/</a>
 
-        </li>
-        <li>Day/Night/Moon cycles: <a href="https://github.com/shama/voxel-sky">https://github.com/shama/voxel-sky</a>
+                </li>
+                <li>Day/Night/Moon cycles: <a href="https://github.com/shama/voxel-sky">https://github.com/shama/voxel-sky</a>
 
-        </li>
-        <li>Portal Gun: <a href="https://github.com/shama/voxel-portal-gun">https://github.com/shama/voxel-portal-gun</a>
+                </li>
+                <li>Portal Gun: <a href="https://github.com/shama/voxel-portal-gun">https://github.com/shama/voxel-portal-gun</a>
 
-        </li>
-      </ul>
-      <h3>
-    <a name="new-project-ideas" class="anchor" href="#new-project-ideas"><span class="octicon octicon-link"></span></a>New Project Ideas</h3>
+                </li>
+            </ul>
+            <h3>
+                <a name="new-project-ideas" class="anchor" href="#new-project-ideas"><span class="octicon octicon-link"></span></a>New Project Ideas</h3>
 
-      <ul class="list">
-        <li>Documenting the <a href="https://github.com/maxogden/voxel-engine#api">core API</a>
+            <ul class="list">
+                <li>Documenting the <a href="https://github.com/maxogden/voxel-engine#api">core API</a>
 
-        </li>
-        <li>Transparent textures (water, glass) - drawing the blocks behind them</li>
-        <li>Water - flow, swimming/buoyancy</li>
-        <li>IRC integration</li>
-        <li>UI-based block-type/material manager, upload + manage textures, add new
-          block types</li>
-        <li>Inventory + toolbelt customizer</li>
-        <li>voxeljs as a data visualizer (like <a href="http://archiveroom.net/">http://archiveroom.net/</a>)
-          or file-browser (<a href="http://www.youtube.com/watch?v=dFUlAQZB9Ng">http://www.youtube.com/watch?v=dFUlAQZB9Ng</a>)</li>
-        <li>in-browser Package Management for <a href="http://voxel-creator.jit.su/">voxel-creator</a> using
-          NPM. See <a href="https://github.com/grncdr/browserify-as-a-service/issues">https://github.com/grncdr/browserify-as-a-service/issues</a>
+                </li>
+                <li>Transparent textures (water, glass) - drawing the blocks behind them</li>
+                <li>Water - flow, swimming/buoyancy</li>
+                <li>IRC integration</li>
+                <li>UI-based block-type/material manager, upload + manage textures, add new
+                    block types</li>
+                <li>Inventory + toolbelt customizer</li>
+                <li>voxeljs as a data visualizer (like <a href="http://archiveroom.net/">http://archiveroom.net/</a>)
+                    or file-browser (<a href="http://www.youtube.com/watch?v=dFUlAQZB9Ng">http://www.youtube.com/watch?v=dFUlAQZB9Ng</a>)</li>
+                <li>in-browser Package Management for <a href="http://voxel-creator.jit.su/">voxel-creator</a> using
+                    NPM. See <a href="https://github.com/grncdr/browserify-as-a-service/issues">https://github.com/grncdr/browserify-as-a-service/issues</a>
 
-        </li>
-        <li>Critter builder + AI builder + <a href="https://github.com/shama/voxel-critter">voxel-critter</a> +
-          <a
-          href="https://github.com/maxogden/voxel-painter">voxel-painter</a>
-        </li>
-        <li>Biome-based Terrain generation</li>
-        <li>Castle defense multiplayer game!</li>
-        <li>Music visualization/VJ software e.g. <a href="https://twitter.com/voxeljs/status/304420023550738432">https://twitter.com/voxeljs/status/304420023550738432</a>
+                </li>
+                <li>Critter builder + AI builder + <a href="https://github.com/shama/voxel-critter">voxel-critter</a> +
+                    <a href="https://github.com/maxogden/voxel-painter">voxel-painter</a>
+                </li>
+                <li>Biome-based Terrain generation</li>
+                <li>Castle defense multiplayer game!</li>
+                <li>Music visualization/VJ software e.g. <a href="https://twitter.com/voxeljs/status/304420023550738432">https://twitter.com/voxeljs/status/304420023550738432</a>
 
-        </li>
-        <li>Get Voxel.js running on the Raspberry Pi via Firefox OS <a href="http://www.philipp-wagner.com/blog/2013/04/firefox-os-for-raspberry-pi-now-available/">http://www.philipp-wagner.com/blog/2013/04/firefox-os-for-raspberry-pi-now-available/</a>
+                </li>
+                <li>Get Voxel.js running on the Raspberry Pi via Firefox OS <a href="http://www.philipp-wagner.com/blog/2013/04/firefox-os-for-raspberry-pi-now-available/">http://www.philipp-wagner.com/blog/2013/04/firefox-os-for-raspberry-pi-now-available/</a>
 
-        </li>
-        <li>Bones, IK solver. Apply animations to meshes preferably BVH</li>
-        <li>Voxel base strategy games or chess</li>
-        <li>Leveling, experience or points system</li>
-        <li>Player/item stats (hp, str, stam, dex... think DnD, MTG, etc)</li>
-      </ul>
-      <h3>
-    <a name="for-more-modules-check-out-these-voxeljs-contributors-on-npm" class="anchor" href="#for-more-modules-check-out-these-voxeljs-contributors-on-npm"><span class="octicon octicon-link"></span></a>For more modules check out these voxel.js contributors on NPM</h3>
+                </li>
+                <li>Bones, IK solver. Apply animations to meshes preferably BVH</li>
+                <li>Voxel base strategy games or chess</li>
+                <li>Leveling, experience or points system</li>
+                <li>Player/item stats (hp, str, stam, dex... think DnD, MTG, etc)</li>
+            </ul>
+            <h3>
+                <a name="for-more-modules-check-out-these-voxeljs-contributors-on-npm" class="anchor" href="#for-more-modules-check-out-these-voxeljs-contributors-on-npm"><span class="octicon octicon-link"></span></a>For more modules check out these voxel.js contributors on NPM</h3>
 
-      <ul class="list">
-        <li><a href="https://npmjs.org/%7Emikolalysenko">https://npmjs.org/~mikolalysenko</a>
-        </li>
-        <li><a href="https://npmjs.org/%7Emaxogden">https://npmjs.org/~maxogden</a>
-        </li>
-        <li><a href="https://npmjs.org/%7Eshama">https://npmjs.org/~shama</a>
-        </li>
-        <li><a href="https://npmjs.org/%7Esubstack">https://npmjs.org/~substack</a>
-        </li>
-        <li><a href="https://npmjs.org/%7Ehughsk">https://npmjs.org/~hughsk</a>
-        </li>
-        <li><a href="https://npmjs.org/%7Echrisdickinson">https://npmjs.org/~chrisdickinson</a>
-        </li>
-      </ul>
-      <h3>More!</h3>
-      <p>The <a href="http://0fps.wordpress.com/2012/07/07/meshing-minecraft-part-2/" target="_blank">0fps blog posts on voxel meshing</a> by <a href="https://github.com/mikolalysenko/" target="_blank">@mikolalysenko</a> are the reason voxel.js exists. Highly recommended reading! Definitely check out the <a href="http://mikolalysenko.github.com/MinecraftMeshes2/" target="_blank">meshing toolbox</a>.</p>
-      <p>mr. doob and <a href="http://threejs.org">three.js</a> are what voxel.js is built on top of.</p>
-      <p><a href="https://github.com/mitsuhiko/webgl-meincraft">webgl-meincraft</a> is a great tech demo that showed a lot of this can be done in a browser</p>
-      <p><a href="https://twitter.com/29a_ch">Jonas Wagner</a> made a <a href="http://29a.ch/sandbox/2012/voxelworld/">killer demo</a> and gave <a href="https://github.com/jwagner/voxelworlds/">a great talk</a> about Voxel Worlds on the web that helped to inspire this project.</p>
-      
-    </article>
-  <article id="fanart">
-    <h2>Fan Art</h2>
-      <p>Here are some of the wonderful things users have made with their voxel worlds. Tweet <a href="http://www.twitter.com/voxeljs" target="_blank">@voxeljs</a> or email max@maxogden.com your photo to submit your art!</a></p>
-        <div id="artWrapper">
-          <img src="postcard-forest.png">
-          <cite>by <a href="http://www.twitter.com/jllord" target="_blank">@jllord</a></cite>
-        </div>
+            <ul class="list">
+                <li><a href="https://npmjs.org/%7Emikolalysenko">https://npmjs.org/~mikolalysenko</a>
+                </li>
+                <li><a href="https://npmjs.org/%7Emaxogden">https://npmjs.org/~maxogden</a>
+                </li>
+                <li><a href="https://npmjs.org/%7Eshama">https://npmjs.org/~shama</a>
+                </li>
+                <li><a href="https://npmjs.org/%7Esubstack">https://npmjs.org/~substack</a>
+                </li>
+                <li><a href="https://npmjs.org/%7Ehughsk">https://npmjs.org/~hughsk</a>
+                </li>
+                <li><a href="https://npmjs.org/%7Echrisdickinson">https://npmjs.org/~chrisdickinson</a>
+                </li>
+            </ul>
+            <h3>More!</h3>
+            <p>The <a href="http://0fps.wordpress.com/2012/07/07/meshing-minecraft-part-2/" target="_blank">0fps blog posts on voxel meshing</a> by <a href="https://github.com/mikolalysenko/" target="_blank">@mikolalysenko</a> are the reason voxel.js exists. Highly recommended reading! Definitely check out the <a href="http://mikolalysenko.github.com/MinecraftMeshes2/" target="_blank">meshing toolbox</a>.</p>
+            <p>mr. doob and <a href="http://threejs.org">three.js</a> are what voxel.js is built on top of.</p>
+            <p><a href="https://github.com/mitsuhiko/webgl-meincraft">webgl-meincraft</a> is a great tech demo that showed a lot of this can be done in a browser</p>
+            <p><a href="https://twitter.com/29a_ch">Jonas Wagner</a> made a <a href="http://29a.ch/sandbox/2012/voxelworld/">killer demo</a> and gave <a href="https://github.com/jwagner/voxelworlds/">a great talk</a> about Voxel Worlds on the web that helped to inspire this project.</p>
 
-        <div id="artWrapper">
-          <img src="voxeljs-logos.png">
-          <cite>voxeljs logos, BSD licensed by <a href="http://www.twitter.com/jllord" target="_blank">@jllord</a></cite>
-        </div>
-  </article>
-  <footer>Any other thoughts or questions, seek out <a href="http://www.twitter.com/maxogden" target="_blank">@maxogden</a> and <a href="http://www.twitter.com/substack" target="_blank">@substack</a>. Site by fan <a href="http://www.twitter.com/jllord" target="_blank">@jllord</a>. Meow.</footer>
-</div>
-<script type="text/javascript">
+        </article>
+        <article id="fanart">
+            <h2>Fan Art</h2>
+            <p>Here are some of the wonderful things users have made with their voxel worlds. Tweet <a href="http://www.twitter.com/voxeljs" target="_blank">@voxeljs</a> or email max@maxogden.com your photo to submit your art!</a></p>
+            <div id="artWrapper">
+                <img src="postcard-forest.png">
+                <cite>by <a href="http://www.twitter.com/jllord" target="_blank">@jllord</a></cite>
+            </div>
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-37591690-1']);
-  _gaq.push(['_trackPageview']);
+            <div id="artWrapper">
+                <img src="voxeljs-logos.png">
+                <cite>voxeljs logos, BSD licensed by <a href="http://www.twitter.com/jllord" target="_blank">@jllord</a></cite>
+            </div>
+        </article>
+        <footer>Any other thoughts or questions, seek out <a href="http://www.twitter.com/maxogden" target="_blank">@maxogden</a> and <a href="http://www.twitter.com/substack" target="_blank">@substack</a>. Site by fan <a href="http://www.twitter.com/jllord" target="_blank">@jllord</a>. Meow.</footer>
+    </div>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-37591690-1']);
+        _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
 </body>
+
 </html>
