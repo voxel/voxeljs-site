@@ -20,7 +20,7 @@ li {max-width: 800px;}
 
 .highlight {padding: 20px; background: #DAE9F7;}
 
-::selection {background: #AEC126;}
+::selection {background: #BFD237;}
 ::-moz-selection {background: #AEC126;}
 
 .list li {margin: 12px 0px 6px 17px; line-height: 20px;}
@@ -304,7 +304,7 @@ footer a, footer a:visited, footer a:active {color: #AEC126; font-weight: 700; b
   font-size: 35px;
   letter-spacing: 1px;
   font-weight: bold;
-  color: white;
+  color: grey;
   text-align: left;
   float: left;
   height: 250px;
